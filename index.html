@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav>
+  <h1>Chandana Shetty</h1>
+  <ul id="nav-links">
+    <li><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+  </ul>
+  <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+</nav>
+    </div>
+    <div class="name">
+      <img src="images/WhatsApp Image 2025-06-22 at 3.04.53 PM.jpeg" alt="" height="200px" width="200px" id="image"/>
+      <p>Full Stack <br /><span>Web </span>Developer</p>
+    </div>
+    <div class="links">
+    </div>
+    <h1 id="h1">ABOUT ME </h1>
+    <div class="wrap" id="about">  
+      <div class=" h1 skills">
+        <p>SKILLS</p>
+        <ul>
+          <li><span>Client-side: </span><br> Html, CSS, Javascript</li>
+          <li><span>Server-side:</span><br> Node.js, EJS, Postgres SQL</li>
+          <li><span>Frameworks: </span><br> Express.js, JQuery</li>
+          <li><span>Programming languages: </span><br> C, Basics of C++</li>
+      </ul>
+      </div>
+      <div class="h1 projects">
+        <p>SOCIAL RESPONSIBILITY</p>
+        <ul>
+          <li><span>NSS :</span> I was an active nss volunteer</li>
+          <li><span>Scouts and Guides:</span> I was a part of scouts and guides </li>
+          
+        </ul>
+
+      </div>
+      <div class="h1 academics">
+        <p>ACADEMICS</p>
+        <ul>
+          <li><span>SSLC : </span>96.10%</li>
+          <li><span>PUC : </span>92%</li>
+          <li><span>BE : </span>8 CGPA</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="container2">
+      <h1>PROJECTS </h1>
+      <div class="works">
+<div class="projectWork">
+      <img src="images/young-woman-studying-library.jpg" alt="">
+      <div class="description">
+        <h3>My BookCase</h3>
+        <p>This website manages all the books I have read and shares a note and gives suggestions to read the book.</p>
+        <br>
+        <a href="https://github.com/chandanashetty31/My-BookCase" class="project-link"><i class="fa-solid fa-link"></i></a>
+      </div>
+</div>
+<div class="projectWork">
+  <img src="images/recruitment_chatbot_definition_features_and_benefits.webp" alt="">
+  <div class="description">
+    <h3>Chatbot</h3>
+    <p>It's a Userfriendly Chatbot which clarifies all our doubts. </p>
+    <br>
+    <a href="https://github.com/chandanashetty31/chat-bot" class="project-link"><i class="fa-solid fa-link"></i></a>
+  </div>
+</div>
+<div class="projectWork">
+  <img src="images/Countries-And-Their-Capitals-For-Kids.jpg" alt="">
+  <div class="description">
+    <h3>Capital Quiz</h3>
+    <p>It's a quiz website where questions are asked based on captials of different countries.</p>
+    <br>
+    <a href="https://github.com/chandanashetty31/Capital-Quiz" class="project-link"><i class="fa-solid fa-link"></i></a>
+  </div>
+</div>
+<div class="projectWork">
+  <img src="images/1_fbLb3jkm3V_m4Mo5bmYJMg.png" alt="">
+  <div class="description">
+    <h3>Weather Website</h3>
+    <p>This website gives the live updates of weather only by giving the city names .</p>
+    <br>
+    <a href="https://github.com/chandanashetty31/weather" class="project-link"><i class="fa-solid fa-link"></i></a>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- contact -->
+     <div class="contact" id="contact">
+      <div class="contact-left">
+        <h1 class="title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> chandanashetty3108@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>  8296610365</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/chandana-shetty31/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/chandanashetty31/"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/Resume.docx" download class="resume">Download Resume</a>
+      </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" id="" placeholder="Your Name" required>
+            <input type="email" name="email" id="" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+          <span id="msg"></span> 
+        </div>
+     </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Chandana</p>
+      </div>
+    <script>
+  const navLinks = document.getElementById("nav-links");
+  const openBtn = document.getElementById("open-btn");
+  const closeBtn = document.getElementById("close-btn");
+
+  function openMenu() {
+    navLinks.style.right = "0";
+    closeBtn.style.display = "block";
+    openBtn.style.display = "none";
+  }
+
+  function closeMenu() {
+    navLinks.style.right = "-200px";
+    closeBtn.style.display = "none";
+    openBtn.style.display = "block";
+  }
+
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+      navLinks.style.right = "0";
+      closeBtn.style.display = "none";
+      openBtn.style.display = "none";
+    } else {
+      navLinks.style.right = "-200px";
+      openBtn.style.display = "block";
+    }
+  });
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxojCuMwdXwkdP3Ev0FV01Qcib-D_F5z8rm2ZRzkv6g_g340kwSnacahGoKLPpCrjESHA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerText = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 3000)
+        form.reset()
+        })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>

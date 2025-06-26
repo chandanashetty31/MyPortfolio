@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color : white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+h1{
+    font: 2.5em sans-serif;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 25px;
+}
+.name p{
+    font: 1.5em sans-serif;
+}
+.name span{
+    color: rgb(135, 135, 247);
+}
+nav ul li a:hover{
+    color: rgb(135, 135, 247);
+}
+.about h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+.links{
+    display: flex;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin-left: 20px;
+    height: 50vh;
+    gap: 20px;
+}
+.container{
+    display: flex;
+    gap:200px;
+    margin-left: 120px;
+    position: relative;
+}
+.links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(135, 135, 247);
+    position: absolute;
+    left: 0;
+    top: 22px;
+    bottom: -8px;
+    transition: 0.5s;
+    
+}
+.links.link-1::after{
+    width: 15%;
+}
+.contents{
+   width: 500px;
+  
+   
+}
+
+.contents ul li{
+    margin-left: 100px;
+}
+.contents ul li span{
+    font-weight: bold;
+}
+.container p{
+    cursor: pointer;
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+   
+    
+
+}
+.h1
+{display: flex;
+    flex-direction: column;
+    width: 400px;
+   background-color:rgb(165, 165, 243) ;
+
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+.h1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.h1 p{
+    text-align: center;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.h1 ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    
+}
+.h1 span{
+   
+    color: black;
+}
+.container2{
+    margin: 40px 20px;
+}
+.works{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+    height: 350px;
+}
+.projectWork{
+    position: relative; 
+    /* overflow: hidden; */
+     
+}
+ .projectWork img{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.description{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), blue);
+    padding: 0 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.description:hover{
+    transform: scale(1.1);
+    box-shadow: 30px 12px 24px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    cursor:  pointer;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px; /* space between left and right blocks */
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px; /* keeps layout from breaking on small screens */
+}
+
+.contact-left {
+  max-width: 500px;
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right input,
+.contact-right textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+   background: #262626;
+   border: none;
+}
+
+.contact-right button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+    background-color:rgb(135, 135, 247); 
+    color: white;
+}
+.contact-right button:hover {
+ opacity:0.5 ;
+}
+.social-media a{
+    color: #ababab;
+    transition: transform 0.5s;
+   
+}
+.social-media {
+    display: flex;
+     gap: 10px;
+}
+.social-media :hover{
+    color: rgb(135, 135, 247);
+    transform: translateY(-2px);
+}
+.resume {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(135, 135, 247);
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+}
+.resume:hover{
+     opacity:0.5 ;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    padding: 20px;
+
+}
+.project-link{
+    color: white;
+}
+.project-link:hover{
+   transform: translateY(-2px);
+}
+
+#close-btn, #open-btn {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+#msg{
+    display: block;
+    
+
+}
+#image{
+  border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  #open-btn {
+    display: block;
+  }
+
+  nav ul {
+    background: rgb(135, 135, 247);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 160px;
+    height: 100vh;
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px;
+  }
+
+  #close-btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+  }
+}
+ /* Add these media queries for responsiveness */
+@media only screen and (max-width: 1024px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .h1 {
+    width: 90%;
+  }
+
+  .works {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: auto;
+  }
+
+  .projectWork img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .name {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .name img {
+    width: 150px;
+    height: auto;
+  }
+
+  .container2 h1 {
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .resume {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .wrap {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  #h1{
+    text-align: center;
+  }
+  .h1 {
+    padding: 15px;
+  }
+
+  .description h3,
+  .description p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .resume {
+    font-size: 16px;
+  }
+}
+
