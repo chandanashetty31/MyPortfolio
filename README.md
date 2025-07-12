@@ -5,10 +5,17 @@ This is a responsive and interactive **personal portfolio website** built using 
 ## 🛠️ Features
 
   🔹 Responsive navbar with hamburger menu
+  <br>
   🔹 Personal introduction with image and title
+  <br>
   🔹 Skills, academics, and social work sections
+  <br>
   🔹 Projects gallery with live GitHub links
+  <br>
   🔹 Contact form with Google Sheets integration
+  <br>
   🔹 Resume download button
+  <br>
   🔹 Social media profile links
+  <br>
   🔹 Mobile-responsive design
