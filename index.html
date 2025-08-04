@@ -10,7 +10,8 @@
   <body>
     <div class="header" id="header">
       <nav>
-  <h1>Chandana Shetty</h1>
+  <h1>Chandana Shetty <i class="fa-solid fa-laptop-code spin-icon"></i>
+</h1>
   <ul id="nav-links">
     <li><a href="#header">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -19,9 +20,11 @@
   </ul>
   <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
 </nav>
+
     </div>
+    
     <div class="name">
-      <img src="images/WhatsApp Image 2025-06-22 at 3.04.53 PM.jpeg" alt="" height="200px" width="200px" id="image"/>
+      <img src="images/WhatsApp Image 2025-08-04 at 6.45.42 PM.jpeg" alt="" height="200px" width="200px" id="image"/>
       <p>Full Stack <br /><span>Web </span>Developer</p>
     </div>
     <div class="links">
@@ -29,29 +32,34 @@
     <h1 id="h1">ABOUT ME </h1>
     <div class="wrap" id="about">  
       <div class=" h1 skills">
-        <p>SKILLS</p>
+        <p><i class="fa-solid fa-laptop-code"></i> SKILLS</p>
         <ul>
-          <li><span>Client-side: </span><br> Html, CSS, Javascript</li>
-          <li><span>Server-side:</span><br> Node.js, EJS, Postgres SQL</li>
-          <li><span>Frameworks: </span><br> Express.js, JQuery</li>
-          <li><span>Programming languages: </span><br> C, Basics of C++</li>
+          <li><span>Client-side: </span> Html, CSS, Javascript, React</li>
+          <li><span>Server-side:</span> Node.js, EJS, Postgres SQL</li>
+          <li><span>Frameworks: </span> Express.js, JQuery</li>
+          <li><span>Programming languages: </span>C++, C programming</li>
       </ul>
       </div>
       <div class="h1 projects">
-        <p>SOCIAL RESPONSIBILITY</p>
+        <p><i class="fa-solid fa-people-group"></i> SOCIAL RESPONSIBILITY</p>
         <ul>
           <li><span>NSS :</span> I was an active nss volunteer</li>
           <li><span>Scouts and Guides:</span> I was a part of scouts and guides </li>
           
         </ul>
+        
+        <p><i class="fa-solid fa-medal"></i> CERTIFICATIONS</p>
+        <ul>
+        <li><a href="https://www.udemy.com/certificate/UC-05490c03-69b8-438c-bda6-7f7fe66b9930/">The Complete full stack web development bootcamp <span>-Udemy 2025 </span></a></li>
+</ul>
 
       </div>
       <div class="h1 academics">
-        <p>ACADEMICS</p>
+        <p><i class="fa-solid fa-graduation-cap"></i> ACADEMICS</p>
         <ul>
-          <li><span>SSLC : </span>96.10%</li>
-          <li><span>PUC : </span>92%</li>
-          <li><span>BE : </span>8 CGPA</li>
+          <li><span>St Ann's high school kuntikan :  </span>96.35%</li>
+          <li><span>Nsam pre university college : </span>2020 - 2022 <br> 92.7% </li>
+          <li><span>AJ institute of engineering and technology :</span> <br>    2022 - 2026 | CGPA :7.6</li>
         </ul>
 
       </div>
@@ -59,6 +67,24 @@
     <div class="container2">
       <h1>PROJECTS </h1>
       <div class="works">
+        <div class="projectWork">
+      <img src="images/Screenshot 2025-07-13 234237.png" alt="">
+      <div class="description">
+        <h3>Crypto Wallet</h3>
+        <p>React-based crypto wallet app that signs and transfers transactions using secp256k1 and interacts with a Node.js backend.</p>
+        <br>
+        <a href="https://github.com/chandanashetty31/Crypto_wallet" class="project-link"><i class="fa-solid fa-link"></i></a>
+      </div>
+</div>
+<div class="projectWork">
+      <img src="images/Screenshot 2025-07-13 233558.png" alt="">
+      <div class="description">
+        <h3>My Notes app</h3>
+        <p>Notes app developed with React and Node.js, using PostgreSQL for backend storage and Express API for CRUD operations.</p>
+        <br>
+        <a href="https://github.com/chandanashetty31/MyNotes" class="project-link"><i class="fa-solid fa-link"></i></a>
+      </div>
+</div>
 <div class="projectWork">
       <img src="images/young-woman-studying-library.jpg" alt="">
       <div class="description">
@@ -106,10 +132,10 @@
         <p><i class="fa-solid fa-phone"></i>  8296610365</p>
         <div class="social-media">
           <a href="https://www.linkedin.com/in/chandana-shetty31/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://github.com/chandanashetty31/"><i class="fa-brands fa-github"></i></a>
         </div>
-        <a href="images/Resume.docx" download class="resume">Download Resume</a>
+        <a href="images/myresume.pdf" download class="resume">Download Resume</a>
       </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
@@ -122,7 +148,7 @@
         </div>
      </div>
       <div class="copyright">
-        <p>Copyright <i class="fa-regular fa-copyright"></i> Chandana</p>
+        <p> &copy; <span id="year"></span> Chandana</p>
       </div>
     <script>
   const navLinks = document.getElementById("nav-links");
@@ -170,6 +196,8 @@
         })
       .catch(error => console.error('Error!', error.message))
   })
+
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
   </body>
 </html>

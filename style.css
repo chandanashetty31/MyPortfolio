@@ -111,12 +111,13 @@ nav ul li a:hover{
 {display: flex;
     flex-direction: column;
     width: 400px;
-   background-color:rgb(165, 165, 243) ;
+   background-color:rgb(121, 121, 224) ;
 
     padding: 20px;
     cursor: pointer;
     align-items: center;
     margin-top: 20px;
+    border-radius: 10%;
    
 }
 .h1:hover{
@@ -126,7 +127,7 @@ nav ul li a:hover{
 }
 .h1 p{
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -134,22 +135,23 @@ nav ul li a:hover{
 .h1 ul{
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     
 }
 .h1 span{
    
     color: black;
+    font-weight: bold;
 }
 .container2{
     margin: 40px 20px;
 }
 .works{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 20px;
-    height: 350px;
+    height: 650px;
 }
 .projectWork{
     position: relative; 
@@ -288,6 +290,24 @@ nav ul li a:hover{
 #image{
   border-radius: 50%;
 }
+.projects a{
+  color: white;
+  text-decoration: none;
+}
+.projects a:hover{
+  color: black;
+}
+.academics ul li{
+   padding: 10px;
+   
+}
+.projects ul li{
+   padding: 10px;
+}
+.skills ul li{
+   padding: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   #open-btn {
     display: block;
